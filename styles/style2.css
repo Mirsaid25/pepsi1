@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg, #2B4D89 0%,#386BA9 50%);
+    padding: 25px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
+.header-mid{
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    gap: 50px;
+}
+.header-right button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 25px;
+    border-color: white;
+   color: white;
+   font-weight: 700;
+}
+.social{
+    align-items: center;
+    margin: 200px 40px 0px 0px;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.body{
+    display: flex;
+}
+.products{
+    width: 85%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 30px;
+    transform: translateX(-1000%);
+    transition: .7s ease;
+}
+.products-right {
+    transform: translateX(0%);
+}
+.prod{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.prod img{
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+
+}
+.block_to_bottom{
+    transform: translateY(1000%);
+    transition:     1s ease;
+}
